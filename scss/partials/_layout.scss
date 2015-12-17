@@ -5,6 +5,16 @@
 /**
  * 4.1 Header
  */
+.header-background {
+	background: $fog center/cover no-repeat;
+	height: 100vh;
+}
+
+.site-header {
+	background-color: $color__header-overlay;
+	padding-bottom: $size__default-padding;
+}
+
 .logo-wrap {
 	max-width: 175px;
 
@@ -17,6 +27,18 @@
 /**
  * 4.2 Navigation
  */
+.mobile-nav-toggle-style-hamburger {
+
+	.menu-toggle {
+		background-color: $color__main-nav;
+
+		&::before,
+		&::after {
+			background-color: $color__main-nav;
+		}
+	}
+}
+
 .main-navigation {
 
 	font: {
@@ -26,6 +48,46 @@
 
 	a {
 		color: $color__main-nav;
+	}
+
+	#primary-menu {
+		top: 20px;
+		background-color: $color__header-overlay;
+
+		@media (min-width: em(768)) {
+			background-color: $color__transparent;
+		}
+
+		.sub-menu {
+			background-color: $color__transparent;
+		}
+	}
+}
+
+.sub-menu-toggle-style-plus-minus {
+
+	.sub-menu-toggle {
+
+		&::before,
+		&::after {
+			background-color: $color__main-nav;
+		}
+	}
+}
+
+.header-style-short {
+	.main-navigation {
+		#primary-menu {
+			.menu-item {
+				> .sub-menu {
+					@media (min-width: em(768)) {
+						border-bottom: none;
+						border-top: 3px solid $great-blue-sea;
+						background-color: $color__header-overlay;
+					}
+				}
+			}
+		}
 	}
 }
 
