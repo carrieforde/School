@@ -5,12 +5,29 @@
 /**
  * 4.1 Header
  */
+.logo-wrap {
+	max-width: 175px;
+
+	@media (min-width: em(768)) {
+		max-width: 300px;
+	}
+}
 
 
 /**
  * 4.2 Navigation
  */
+.main-navigation {
 
+	font: {
+		family: $font__main-navigation;
+		size: 20px;
+	}
+
+	a {
+		color: $color__main-nav;
+	}
+}
 
 /**
  * 4.3 Content
@@ -25,3 +42,8 @@
 /**
  * 4.5. Footer
  */
+
+.site-footer {
+	background-color: $color__background-footer;
+	color: $color__footer-text;
+}

@@ -14,7 +14,7 @@ module.exports = function( grunt ) {
 			},
 			dist: {
 				files: {
-					'style.css': 'sass/style.scss'
+					'style.css': 'scss/style.scss'
 				},
 			},
 		},

@@ -1,0 +1,16 @@
+/*!
+Theme Name: School
+Theme URI: http://alcatraztheme.com
+Author: Carrie Forde
+Author URI: http://alcatraztheme.com
+Description: A lightweight boilerplate child theme for Alcatraz.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Template: alcatraz
+Text Domain: school
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/html{box-sizing:border-box}*,:after,:before{box-sizing:inherit}body{color:#2e2a25;font-family:adobe-garamond-pro,serif;font-size:18px}.content-area a{color:#00a8e1}h1,h2,h3,h4,h5,h6{font-family:SackersGothicStd-Light,sans-serif}.logo-wrap{max-width:175px}.main-navigation{font-family:SackersGothicStd-Light,sans-serif;font-size:20px}.main-navigation a{color:#6b6763}.site-footer{background-color:#00a8e1;color:#fff}.home .entry-title{display:none}@media (min-width:48em){.logo-wrap{max-width:300px}}

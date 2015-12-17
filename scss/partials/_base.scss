@@ -13,52 +13,27 @@
 // 2.1.1 Colors
 
 // Color Palette
-$bright-light: #e7ecf1;
-$sf-fog: #95a0a3;
-$prision-cell-gray: #535d65;
+$great-blue-sea: #00A8E1;
+$bottom-of-the-sea: #2e2a25;
+$sea-cliff: #6b6763;
+$fog: #C6C4C2;
 $mist: #eaf1f2;
-$alcatraz-blue: #6E9AA2;
-$black-as-night: #040a04;
-$hope: #fff9c0;
-$true-white: #fff;
-$true-black: #000;
 
 // Background Colors
-$color__background-body: $true-white;
-$color__background-screen: #f1f1f1;
-$color__background-hr: #ccc;
-$color__background-button: #e6e6e6;
-$color__background-pre: $bright-light;
-$color__background-ins: $hope;
-$color__background-blockquote: $mist;
-$color__background-table-row: $mist;
+$color__background-body: #fff;
+$color__background-footer: $great-blue-sea;
 
 // Text Colors
-$color__text-screen: #21759b;
-$color__text-input: $prision-cell-gray;
-$color__text-input-focus: #6e9aa2;
-$color__link: $alcatraz-blue;
-$color__link-visited: darken($color__link, 40%);
-$color__link-hover: darken($color__link, 20%);
-$color__text-main: $black-as-night;
+$color__text-main: $bottom-of-the-sea;
+$color__main-nav: $sea-cliff;
+$color__footer-text: #fff;
 
-// Border Colors
-$color__border-button: #ccc #ccc #bbb;
-$color__border-button-hover: #ccc #bbb #aaa;
-$color__border-button-focus: #aaa #bbb #bbb;
-$color__border-input: #ccc;
-$color__border-abbr: #666;
-$color__border-table: #eee;
-
-// Utility Colors
-$color__transparent-overlay: rgba(0,0,0,0.4);
-
+// Overlay
 
 // 2.2.2 Typography
-$font__main: 'Source Sans Pro', sans-serif;
-$font__headings: 'Source Serif Pro', serif;
-$font__code: 'Source Code Pro', monospace;
-$font__pre: 'Source Code Pro', Courier, monospace;
+$font__main: "adobe-garamond-pro", serif;
+$font__headings: SackersGothicStd-Light, sans-serif;
+$font__main-navigation: $font__headings;
 $font__line-height-body: 1.5;
 $font__line-height-headings: 1.2;
 $font__line-height-pre: 1.6;
@@ -82,8 +57,26 @@ $size__site-branding: 300px;
  * 2.3 Defaults
  */
 
+body {
+	color: $color__text-main;
+	font-family: $font__main;
+	font-size: 18px;
+}
+
 
 /**
  * 2.4 Typography
  */
 
+.content-area a {
+	color: $great-blue-sea;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $font__headings;
+}

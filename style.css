@@ -8,10 +8,134 @@ Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Template: alcatraz
-Text Domain: alcatraz-child
+Text Domain: school
 Tags:
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7Ozs7Ozs7Ozs7O0VBZUUiLCJmaWxlIjoic3R5bGUuY3NzIn0= */
+/**
+ * Table of Contents
+ *
+ * 1.0 Sass Libraries
+ *     1.1 Bourbon
+ *     1.2 Neat
+ * 2.0 Base
+ *     2.2 Variables
+ *     2.3 Mixins
+ *     2.4 Defaults
+ *     2.5 Grid
+ *     2.6 Typography
+ * 3.0 Components
+ *     3.1 Media
+ *     3.2 Forms
+ *     3.3 Tables
+ *     3.4 Widgets
+ * 4.0 Layout
+ *     4.1 Header
+ *     4.2 Navigation
+ *     4.3 Content
+ *     4.4 Sidebars
+ *     4.5 Footer
+ * 5.0 Plugins
+ * 6.0 Page-Specific Styles
+ *
+ */
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+/**
+ * 2.0 Base
+ */
+/**
+ * 2.1 Variables
+ *
+ * Define your theme's color palette, with new variables, and use them in
+ * the background, text, border, and utility colors to make quick updates
+ * site-wide.
+ */
+/**
+ * 2.2 Mixins
+ */
+/**
+ * 2.3 Defaults
+ */
+body {
+  color: #2e2a25;
+  font-family: "adobe-garamond-pro", serif;
+  font-size: 18px;
+}
+
+/**
+ * 2.4 Typography
+ */
+.content-area a {
+  color: #00A8E1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: SackersGothicStd-Light, sans-serif;
+}
+
+/**
+ * 4.0 Layout
+ */
+/**
+ * 4.1 Header
+ */
+.logo-wrap {
+  max-width: 175px;
+}
+
+/**
+ * 4.2 Navigation
+ */
+.main-navigation {
+  font-family: SackersGothicStd-Light, sans-serif;
+  font-size: 20px;
+}
+
+.main-navigation a {
+  color: #6b6763;
+}
+
+/**
+ * 4.3 Content
+ */
+/**
+ * 4.4 Sidebars
+ */
+/**
+ * 4.5. Footer
+ */
+.site-footer {
+  background-color: #00A8E1;
+  color: #fff;
+}
+
+/**
+ * 6.0 Page-Specific Styles
+ */
+/**
+ * 6.1 Home
+ */
+.home .entry-title {
+  display: none;
+}
+
+@media (min-width: 48em) {
+  .logo-wrap {
+    max-width: 300px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -30,4 +30,12 @@ function school_enqueue_scripts() {
 		array( 'alcatraz-style' ),
 		ALCATRAZ_CHILD_VERSION
 	);
+
+	// Add custom fonts.
+	wp_enqueue_style(
+		'school-fonts',
+		get_stylesheet_directory_uri() . '/assets/webfonts/MyFontsWebfontsKit.css',
+		array(),
+		ALCATRAZ_CHILD_VERSION
+	);
 }
