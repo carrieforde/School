@@ -1,0 +1,89 @@
+/**
+ * 2.0 Base
+ */
+
+/**
+ * 2.1 Variables
+ *
+ * Define your theme's color palette, with new variables, and use them in
+ * the background, text, border, and utility colors to make quick updates
+ * site-wide.
+ */
+
+// 2.1.1 Colors
+
+// Color Palette
+$bright-light: #e7ecf1;
+$sf-fog: #95a0a3;
+$prision-cell-gray: #535d65;
+$mist: #eaf1f2;
+$alcatraz-blue: #6E9AA2;
+$black-as-night: #040a04;
+$hope: #fff9c0;
+$true-white: #fff;
+$true-black: #000;
+
+// Background Colors
+$color__background-body: $true-white;
+$color__background-screen: #f1f1f1;
+$color__background-hr: #ccc;
+$color__background-button: #e6e6e6;
+$color__background-pre: $bright-light;
+$color__background-ins: $hope;
+$color__background-blockquote: $mist;
+$color__background-table-row: $mist;
+
+// Text Colors
+$color__text-screen: #21759b;
+$color__text-input: $prision-cell-gray;
+$color__text-input-focus: #6e9aa2;
+$color__link: $alcatraz-blue;
+$color__link-visited: darken($color__link, 40%);
+$color__link-hover: darken($color__link, 20%);
+$color__text-main: $black-as-night;
+
+// Border Colors
+$color__border-button: #ccc #ccc #bbb;
+$color__border-button-hover: #ccc #bbb #aaa;
+$color__border-button-focus: #aaa #bbb #bbb;
+$color__border-input: #ccc;
+$color__border-abbr: #666;
+$color__border-table: #eee;
+
+// Utility Colors
+$color__transparent-overlay: rgba(0,0,0,0.4);
+
+
+// 2.2.2 Typography
+$font__main: 'Source Sans Pro', sans-serif;
+$font__headings: 'Source Serif Pro', serif;
+$font__code: 'Source Code Pro', monospace;
+$font__pre: 'Source Code Pro', Courier, monospace;
+$font__line-height-body: 1.5;
+$font__line-height-headings: 1.2;
+$font__line-height-pre: 1.6;
+$font__margin-headings: 0 0 em(10) 0;
+
+
+// 2.2.3 Structure
+$size__site-width: 100%;
+$size__sidebar-width: 25%;
+$size__sidebar-content-width: $size__site-width - $size__sidebar-width;
+$size__default-padding: 20px;
+$size__site-branding: 300px;
+
+
+/**
+ * 2.2 Mixins
+ */
+
+
+/**
+ * 2.3 Defaults
+ */
+
+
+/**
+ * 2.4 Typography
+ */
+

@@ -1,0 +1,63 @@
+/*!
+Theme Name: Alcatraz Child
+Theme URI: http://alcatraztheme.com
+Author: Carrie Forde
+Author URI: http://alcatraztheme.com
+Description: A lightweight boilerplate child theme for Alcatraz.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Template: alcatraz
+Text Domain: alcatraz-child
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/**
+ * Table of Contents
+ *
+ * 1.0 Sass Libraries
+ *     1.1 Bourbon
+ *     1.2 Neat
+ * 2.0 Base
+ *     2.2 Variables
+ *     2.3 Mixins
+ *     2.4 Defaults
+ *     2.5 Grid
+ *     2.6 Typography
+ * 3.0 Components
+ *     3.1 Media
+ *     3.2 Forms
+ *     3.3 Tables
+ *     3.4 Widgets
+ * 4.0 Layout
+ *     4.1 Header
+ *     4.2 Navigation
+ *     4.3 Content
+ *     4.4 Sidebars
+ *     4.5 Footer
+ * 5.0 Plugins
+ * 6.0 Page-Specific Styles
+ *
+ */
+
+// 1.0 Sass Libraries
+@import "bourbon";
+@import "neat";
+
+// 2.0 Base
+// @import "partials/base";
+
+// 3.0 Components
+// @import "partials/components";
+
+// 4.0 Layout
+// @import "partials/layout";
+
+// 5.0 Plugins
+// @import "partials/plugins";
+
+// 6.0 Page-Specific Styles
+//@import "partials/page-specific";
