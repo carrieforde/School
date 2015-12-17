@@ -62,7 +62,7 @@ module.exports = function( grunt ) {
 				options: {
 					cwd: '',
 					domainPath: 'languages/',
-					potFilename: 'alcatraz-child.pot',
+					potFilename: 'school.pot',
 					type: 'wp-theme'
 				},
 			},
