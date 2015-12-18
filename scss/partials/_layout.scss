@@ -8,11 +8,20 @@
 .header-background {
 	background: $fog center/cover no-repeat;
 	height: 100vh;
+
+	@media (min-width: em(768)) {
+		height: 60vh;
+		background-position: top center;
+	}
 }
 
 .site-header {
-	background-color: $color__header-overlay;
+	background-color: $color__overlay-header;
 	padding-bottom: $size__default-padding;
+
+	@media (min-width: em(768)) {
+		padding-bottom: 15px;
+	}
 }
 
 .logo-wrap {
@@ -30,11 +39,11 @@
 .mobile-nav-toggle-style-hamburger {
 
 	.menu-toggle {
-		background-color: $color__main-nav;
+		background-color: $color__main-navigation;
 
 		&::before,
 		&::after {
-			background-color: $color__main-nav;
+			background-color: $color__main-navigation;
 		}
 	}
 }
@@ -47,19 +56,19 @@
 	}
 
 	a {
-		color: $color__main-nav;
+		color: $color__main-navigation;
 	}
 
 	#primary-menu {
 		top: 20px;
-		background-color: $color__header-overlay;
+		background-color: $color__overlay-header;
 
 		@media (min-width: em(768)) {
-			background-color: $color__transparent;
+			background-color: $color__overlay-transparent;
 		}
 
 		.sub-menu {
-			background-color: $color__transparent;
+			background-color: $color__overlay-transparent;
 		}
 	}
 }
@@ -70,7 +79,7 @@
 
 		&::before,
 		&::after {
-			background-color: $color__main-nav;
+			background-color: $color__main-navigation;
 		}
 	}
 }
@@ -83,7 +92,7 @@
 					@media (min-width: em(768)) {
 						border-bottom: none;
 						border-top: 3px solid $great-blue-sea;
-						background-color: $color__header-overlay;
+						background-color: $color__overlay-submenu;
 					}
 				}
 			}
@@ -94,7 +103,17 @@
 /**
  * 4.3 Content
  */
+.boxed-content .site-content {
+	max-width: 640px;
+}
 
+.home,
+.about {
+
+	.entry-title {
+		@include hide-text;
+	}
+}
 
 /**
  * 4.4 Sidebars

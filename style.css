@@ -143,6 +143,22 @@ h6 {
 /**
  * 4.3 Content
  */
+.boxed-content .site-content {
+  max-width: 640px;
+}
+
+.home .entry-title,
+.about .entry-title {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
 /**
  * 4.4 Sidebars
  */
@@ -160,11 +176,15 @@ h6 {
 /**
  * 6.1 Home
  */
-.home .entry-title {
-  display: none;
-}
 
 @media (min-width: 48em) {
+  .header-background {
+    height: 60vh;
+    background-position: top center;
+  }
+  .site-header {
+    padding-bottom: 15px;
+  }
   .logo-wrap {
     max-width: 300px;
   }
@@ -174,7 +194,7 @@ h6 {
   .header-style-short .main-navigation #primary-menu .menu-item > .sub-menu {
     border-bottom: none;
     border-top: 3px solid #00A8E1;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.3);
   }
 }
 /*# sourceMappingURL=style.css.map */

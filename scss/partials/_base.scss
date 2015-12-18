@@ -25,12 +25,13 @@ $color__background-footer: $great-blue-sea;
 
 // Text Colors
 $color__text-main: $bottom-of-the-sea;
-$color__main-nav: $sea-cliff;
+$color__main-navigation: $sea-cliff;
 $color__footer-text: #fff;
 
 // Overlay
-$color__header-overlay: rgba(255, 255, 255, 0.6);
-$color__transparent: transparent;
+$color__overlay-header: rgba(255, 255, 255, 0.6);
+$color__overlay-submenu: rgba(255, 255, 255, 0.3);
+$color__overlay-transparent: transparent;
 
 // 2.2.2 Typography
 $font__main: "adobe-garamond-pro", serif;
@@ -53,7 +54,16 @@ $size__site-branding: 300px;
 /**
  * 2.2 Mixins
  */
-
+@mixin hide-text {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
 
 /**
  * 2.3 Defaults
