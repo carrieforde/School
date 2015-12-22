@@ -1,9 +1,8 @@
-
 <?php
 /**
- * Content template for single pages.
+ * Default template for singlular pages for all post types except page.
  *
- * @package school
+ * @package alcatraz
  */
 ?>
 
@@ -26,16 +25,7 @@
 	</div>
 
 	<footer class="entry-footer">
-		<?php
-			edit_post_link(
-				sprintf(
-					esc_html__( 'Edit %s', 'alcatraz' ),
-					the_title( '<span class="screen-reader-text">"', '"</span>', false )
-				),
-				'<span class="edit-link">',
-				'</span>'
-			);
-		?>
+		<?php alcatraz_entry_footer(); ?>
 	</footer>
 </article>
 
