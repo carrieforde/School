@@ -148,7 +148,8 @@ h6 {
 }
 
 .home .entry-title,
-.about .entry-title {
+.about .entry-title,
+.contact .entry-title {
   border: 0;
   clip: rect(0 0 0 0);
   height: 1px;
