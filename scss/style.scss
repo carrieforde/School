@@ -51,13 +51,13 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @import "partials/base";
 
 // 3.0 Components
-// @import "partials/components";
+@import "partials/components";
 
 // 4.0 Layout
 @import "partials/layout";
 
 // 5.0 Plugins
-// @import "partials/plugins";
+@import "partials/plugins";
 
 // 6.0 Page-Specific Styles
 @import "partials/page-specific";

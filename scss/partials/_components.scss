@@ -10,6 +10,27 @@
 /**
  * 3.2 Forms
  */
+input[type="submit"] {
+	border: 2px solid $color__border-button;
+	border-radius: 0;
+	background: $color__background-button;
+	box-shadow: none;
+	color: $color__text-button;
+	line-height: inherit;
+	padding: em(10) em(20);
+	text-shadow: none;
+	transition: all 0.2s ease-in;
+	font-family: $font__button;
+	text-transform: uppercase;
+	font-size: em(14);
+
+	&:hover {
+		border-color: $color__border-button;
+		background-color: $color__background-button-hover;
+		color: $color__text-button-hover;
+		box-shadow: none;
+	}
+}
 
 
 /**
@@ -20,3 +41,17 @@
 /**
  * 3.4 Widgets
  */
+
+/* Footer Widgets */
+.footer-widget-areas {
+
+	.widget-title {
+		font-size: em(20);
+		text-align: center;
+	}
+}
+
+.footer-widget-area {
+	margin-bottom: em(20);
+	padding: $size__default-padding;
+}

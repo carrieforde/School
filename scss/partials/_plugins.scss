@@ -1,3 +1,19 @@
 /**
  * 5.0 Plugin Styles
  */
+.gform_wrapper.school-contact-form_wrapper {
+	margin-bottom: em(30);
+
+	.gform_footer {
+		&.left_label {
+			margin-left: 32.5%;
+		}
+		input.button,
+		input[type=submit] {
+			font-size: em(14);
+		}
+	}
+	.left_label .gfield_label {
+		font-weight: 400;
+	}
+}

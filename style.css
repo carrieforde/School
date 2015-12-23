@@ -88,6 +88,54 @@ h6 {
 }
 
 /**
+ * 3.0 Components
+ */
+/**
+ * 3.1 Media
+ */
+/**
+ * 3.2 Forms
+ */
+input[type="submit"] {
+  border: 2px solid #00A8E1;
+  border-radius: 0;
+  background: #00A8E1;
+  box-shadow: none;
+  color: #fff;
+  line-height: inherit;
+  padding: 0.625em 1.25em;
+  text-shadow: none;
+  transition: all 0.2s ease-in;
+  font-family: SackersGothicStd-Light, sans-serif;
+  text-transform: uppercase;
+  font-size: 0.875em;
+}
+
+input[type="submit"]:hover {
+  border-color: #00A8E1;
+  background-color: #fff;
+  color: #00A8E1;
+  box-shadow: none;
+}
+
+/**
+ * 3.3 Tables
+ */
+/**
+ * 3.4 Widgets
+ */
+/* Footer Widgets */
+.footer-widget-areas .widget-title {
+  font-size: 1.25em;
+  text-align: center;
+}
+
+.footer-widget-area {
+  margin-bottom: 1.25em;
+  padding: 20px;
+}
+
+/**
  * 4.0 Layout
  */
 /**
@@ -167,8 +215,29 @@ h6 {
  * 4.5. Footer
  */
 .site-footer {
+  padding: 60px 40px;
   background-color: #00A8E1;
   color: #fff;
+}
+
+/**
+ * 5.0 Plugin Styles
+ */
+.gform_wrapper.school-contact-form_wrapper {
+  margin-bottom: 1.875em;
+}
+
+.gform_wrapper.school-contact-form_wrapper .gform_footer.left_label {
+  margin-left: 32.5%;
+}
+
+.gform_wrapper.school-contact-form_wrapper .gform_footer input.button,
+.gform_wrapper.school-contact-form_wrapper .gform_footer input[type=submit] {
+  font-size: 0.875em;
+}
+
+.gform_wrapper.school-contact-form_wrapper .left_label .gfield_label {
+  font-weight: 400;
 }
 
 /**
@@ -181,6 +250,7 @@ h6 {
 /**
  * 6.2 Menus
  */
+
 article.menu {
   padding: 40px;
 }
@@ -242,7 +312,11 @@ article.menu {
     border-top: 3px solid #00A8E1;
     background-color: rgba(255, 255, 255, 0.3);
   }
-  height: 60vh;
-  background-position: center center;
+  .home .header-background {
+    background-position: center center;
+  }
+  .single-menu .header-background {
+    background-position: center center;
+  }
 }
 /*# sourceMappingURL=style.css.map */

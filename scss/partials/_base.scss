@@ -19,14 +19,25 @@ $sea-cliff: #6b6763;
 $fog: #C6C4C2;
 $mist: #eaf1f2;
 
+// Fonts
+$garamond: "adobe-garamond-pro", serif;
+$sackers: SackersGothicStd-Light, sans-serif;
+
 // Background Colors
 $color__background-body: #fff;
 $color__background-footer: $great-blue-sea;
+$color__background-button: $great-blue-sea;
+$color__background-button-hover: #fff;
+
+// Border Colors
+$color__border-button: $great-blue-sea;
 
 // Text Colors
 $color__text-main: $bottom-of-the-sea;
 $color__main-navigation: $sea-cliff;
 $color__footer-text: #fff;
+$color__text-button: #fff;
+$color__text-button-hover: $great-blue-sea;
 
 // Overlay
 $color__overlay-header: rgba(255, 255, 255, 0.6);
@@ -34,13 +45,14 @@ $color__overlay-submenu: rgba(255, 255, 255, 0.3);
 $color__overlay-transparent: transparent;
 
 // 2.2.2 Typography
-$font__main: "adobe-garamond-pro", serif;
-$font__headings: SackersGothicStd-Light, sans-serif;
-$font__main-navigation: $font__headings;
+$font__main: $garamond;
+$font__headings: $sackers;
+$font__main-navigation: $sackers;
 $font__line-height-body: 1.5;
 $font__line-height-headings: 1.2;
 $font__line-height-pre: 1.6;
 $font__margin-headings: 0 0 em(10) 0;
+$font__button: $sackers;
 
 
 // 2.2.3 Structure

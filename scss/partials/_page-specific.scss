@@ -6,13 +6,19 @@
  * 6.1 Home
  */
 @media (min-width: em(768)) {
-	height: 60vh;
-	background-position: center center;
+	.home .header-background {
+		background-position: center center;
+	}
 }
 
 /**
  * 6.2 Menus
  */
+@media (min-width: em(768)) {
+	.single-menu .header-background {
+		background-position: center center;
+	}
+}
 article.menu {
 	padding: $size__default-padding * 2;
 }
