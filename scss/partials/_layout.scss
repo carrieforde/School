@@ -17,10 +17,10 @@
 
 .site-header {
 	background-color: $color__overlay-header;
-	padding-bottom: $size__default-padding;
+	padding-bottom: $size__default-padding / 2;
 
 	@media (min-width: em(768)) {
-		padding-bottom: 15px;
+		padding-bottom: 0;
 	}
 }
 
@@ -28,7 +28,7 @@
 	max-width: 175px;
 
 	@media (min-width: em(768)) {
-		max-width: 300px;
+		max-width: 200px;
 	}
 }
 

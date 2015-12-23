@@ -5,4 +5,60 @@
 /**
  * 6.1 Home
  */
+@media (min-width: em(768)) {
+	height: 60vh;
+	background-position: center center;
+}
 
+/**
+ * 6.2 Menus
+ */
+article.menu {
+	padding: $size__default-padding * 2;
+}
+
+.single-menu {
+	.entry-title {
+		margin-bottom: em(30);
+		text-align: center;
+	}
+}
+
+.school-menu-course {
+	font-size: em(30);
+	margin-bottom: em(10);
+	text-align: center;
+}
+
+.school-menu-item-heading {
+	font: {
+		size: em(18);
+		weight: 400;
+	}
+	margin-bottom: 0;
+}
+
+.school-menu-item {
+	float: left;
+}
+
+.school-menu-price {
+	float: right;
+}
+
+.school-menu-source {
+	font: {
+		size: em(16);
+		style: italic;
+	}
+	margin-bottom: 0;
+}
+
+/**
+ * 6.3 Contact
+ */
+.school-contact-form {
+	.gfield_label {
+		text-align: right;
+	}
+}

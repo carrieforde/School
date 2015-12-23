@@ -1,6 +1,6 @@
 <?php
 /**
- * Default template for singlular pages for all post types except page.
+ * Content template for menu posts.
  *
  * @package alcatraz
  */
@@ -16,12 +16,7 @@
 
 	<div class="entry-content">
 		<?php the_content(); ?>
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'alcatraz' ),
-				'after'  => '</div>',
-			) );
-		?>
+		<?php echo school_menu_output(); ?>
 	</div>
 
 	<footer class="entry-footer">

@@ -100,7 +100,7 @@ h6 {
 
 .site-header {
   background-color: rgba(255, 255, 255, 0.6);
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .logo-wrap {
@@ -177,16 +177,61 @@ h6 {
  * 6.1 Home
  */
 
+/**
+ * 6.2 Menus
+ */
+article.menu {
+  padding: 40px;
+}
+
+.single-menu .entry-title {
+  margin-bottom: 1.875em;
+  text-align: center;
+}
+
+.school-menu-course {
+  font-size: 1.875em;
+  margin-bottom: 0.625em;
+  text-align: center;
+}
+
+.school-menu-item-heading {
+  font-size: 1.125em;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.school-menu-item {
+  float: left;
+}
+
+.school-menu-price {
+  float: right;
+}
+
+.school-menu-source {
+  font-size: 1em;
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+/**
+ * 6.3 Contact
+ */
+.school-contact-form .gfield_label {
+  text-align: right;
+}
+
 @media (min-width: 48em) {
   .header-background {
     height: 60vh;
     background-position: top center;
   }
   .site-header {
-    padding-bottom: 15px;
+    padding-bottom: 0;
   }
   .logo-wrap {
-    max-width: 300px;
+    max-width: 200px;
   }
   .main-navigation #primary-menu {
     background-color: transparent;
@@ -196,5 +241,7 @@ h6 {
     border-top: 3px solid #00A8E1;
     background-color: rgba(255, 255, 255, 0.3);
   }
+  height: 60vh;
+  background-position: center center;
 }
 /*# sourceMappingURL=style.css.map */

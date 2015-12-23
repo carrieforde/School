@@ -1,6 +1,6 @@
 <?php
 /**
- * Template for displaying all single posts.
+ * Template for displaying all menu posts.
  *
  * @package alcatraz
  */
@@ -21,8 +21,6 @@ get_header(); ?>
 				$post_type = '';
 			}
 			get_template_part( 'template-parts/content-menu', $post_type ); ?>
-
-			<?php the_post_navigation(); ?>
 
 			<?php
 				// Maybe load comments.
