@@ -25,11 +25,7 @@
 }
 
 .logo-wrap {
-	max-width: 175px;
-
-	@media (min-width: em(768)) {
-		max-width: 200px;
-	}
+	max-width: 150px;
 }
 
 
@@ -38,12 +34,11 @@
  */
 .mobile-nav-toggle-style-hamburger {
 
-	.menu-toggle {
-		background-color: $color__main-navigation;
+	.menu-toggle,
+	.menu-toggle:hover {
 
-		&::before,
-		&::after {
-			background-color: $color__main-navigation;
+		.menu-toggle-span {
+			background-color: $color__background-color-menu-triggers;
 		}
 	}
 }
@@ -67,17 +62,6 @@
 
 		.sub-menu {
 			background-color: $color__overlay-transparent;
-		}
-	}
-}
-
-.sub-menu-toggle-style-plus-minus {
-
-	.sub-menu-toggle {
-
-		&::before,
-		&::after {
-			background-color: $color__main-navigation;
 		}
 	}
 }
@@ -109,7 +93,8 @@
 	}
 }
 
-.sub-level-toggle {
+.sub-level-toggle,
+.sub-level-toggle:hover {
 	.sub-level-toggle-span {
 		background-color: $color__background-color-menu-triggers;
 	}

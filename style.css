@@ -152,17 +152,14 @@ input[type="submit"]:hover {
 }
 
 .logo-wrap {
-  max-width: 175px;
+  max-width: 150px;
 }
 
 /**
  * 4.2 Navigation
  */
-.mobile-nav-toggle-style-hamburger .menu-toggle {
-  background-color: #6b6763;
-}
-
-.mobile-nav-toggle-style-hamburger .menu-toggle::before, .mobile-nav-toggle-style-hamburger .menu-toggle::after {
+.mobile-nav-toggle-style-hamburger .menu-toggle .menu-toggle-span,
+.mobile-nav-toggle-style-hamburger .menu-toggle:hover .menu-toggle-span {
   background-color: #6b6763;
 }
 
@@ -179,10 +176,6 @@ input[type="submit"]:hover {
   background-color: transparent;
 }
 
-.sub-menu-toggle-style-plus-minus .sub-menu-toggle::before, .sub-menu-toggle-style-plus-minus .sub-menu-toggle::after {
-  background-color: #6b6763;
-}
-
 .mobile-nav-style-default #primary-menu {
   box-shadow: none;
 }
@@ -192,7 +185,8 @@ input[type="submit"]:hover {
   right: 3px;
 }
 
-.sub-level-toggle .sub-level-toggle-span {
+.sub-level-toggle .sub-level-toggle-span,
+.sub-level-toggle:hover .sub-level-toggle-span {
   background-color: #6b6763;
 }
 
@@ -345,9 +339,6 @@ article.menu {
   }
   .site-header {
     padding-bottom: 0;
-  }
-  .logo-wrap {
-    max-width: 200px;
   }
   .main-navigation #primary-menu {
     background-color: transparent;
