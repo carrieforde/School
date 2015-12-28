@@ -36,35 +36,38 @@
 
 		<header id="site-header" class="site-header" role="banner">
 
-			<?php do_action( 'alcatraz_before_header_inside' ); ?>
+		<?php do_action( 'alcatraz_before_header_inside' ); ?>
 
-			<div class="header-inner">
+		<div class="header-inner">
 
-				<?php do_action( 'alcatraz_header' ); ?>
+			<?php do_action( 'alcatraz_header' ); ?>
 
+		</div>
+
+		<?php if ( has_nav_menu( 'primary' ) ) : ?>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<div class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+				<span class="menu-text"><?php esc_html_e( 'Menu', 'alcatraz' ); ?></span>
+				<span class="menu-toggle-span span-1"></span>
+				<span class="menu-toggle-span span-2"></span>
+				<span class="menu-toggle-span span-3"></span>
 			</div>
+			<div class="menu-overlay"></div>
+			<?php wp_nav_menu( array(
+				'theme_location' => 'primary',
+				'menu_id'        => 'primary-menu',
+				'container_id'   => 'primary-menu-wrap',
+			) ); ?>
+			<div id="mobile-nav-left-swipe-zone"></div>
+			<div id="mobile-nav-right-swipe-zone"></div>
+		</nav>
 
-			<?php if ( has_nav_menu( 'primary' ) ) : ?>
+		<?php endif; ?>
 
-			<nav id="site-navigation" class="main-navigation" role="navigation">
-				<div class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-					<span class="menu-text"><?php esc_html_e( 'Menu', 'alcatraz' ); ?></span>
-				</div>
-				<div class="menu-overlay"></div>
-				<?php wp_nav_menu( array(
-					'theme_location' => 'primary',
-					'menu_id'        => 'primary-menu',
-					'container_id'   => 'primary-menu-wrap',
-				) ); ?>
-				<div id="mobile-nav-left-swipe-zone"></div>
-				<div id="mobile-nav-right-swipe-zone"></div>
-			</nav>
+		<?php do_action( 'alcatraz_after_header_inside' ); ?>
 
-			<?php endif; ?>
-
-			<?php do_action( 'alcatraz_after_header_inside' ); ?>
-
-		</header>
+	</header>
 
 	</div>
 	<?php do_action( 'alcatraz_after_header' ); ?>
