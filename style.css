@@ -175,16 +175,24 @@ input[type="submit"]:hover {
   color: #6b6763;
 }
 
-.main-navigation #primary-menu {
-  top: 20px;
-  background-color: rgba(255, 255, 255, 0.6);
-}
-
 .main-navigation #primary-menu .sub-menu {
   background-color: transparent;
 }
 
 .sub-menu-toggle-style-plus-minus .sub-menu-toggle::before, .sub-menu-toggle-style-plus-minus .sub-menu-toggle::after {
+  background-color: #6b6763;
+}
+
+.mobile-nav-style-default #primary-menu {
+  box-shadow: none;
+}
+
+.mobile-nav-style-default #primary-menu a.sub-level-toggle {
+  top: 6%;
+  right: 3px;
+}
+
+.sub-level-toggle .sub-level-toggle-span {
   background-color: #6b6763;
 }
 
@@ -268,6 +276,7 @@ input[type="submit"]:hover {
   transition: all 0.2s ease-in;
   border: 2px solid #fff;
   padding: 10px 20px;
+  display: inline-block;
 }
 
 .school-button.center:hover {

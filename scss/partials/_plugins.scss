@@ -46,6 +46,7 @@
 	transition: all 0.2s ease-in;
 	border: 2px solid $color__border-button-footer;
 	padding: 10px 20px;
+	display: inline-block;
 
 	&:hover {
 		background-color: $color__background-button-footer-hover;

@@ -60,8 +60,6 @@
 	}
 
 	#primary-menu {
-		top: 20px;
-		background-color: $color__overlay-header;
 
 		@media (min-width: em(768)) {
 			background-color: $color__overlay-transparent;
@@ -97,6 +95,23 @@
 				}
 			}
 		}
+	}
+}
+
+.mobile-nav-style-default {
+	#primary-menu {
+		box-shadow: none;
+
+		a.sub-level-toggle {
+			top: 6%;
+			right: 3px;
+		}
+	}
+}
+
+.sub-level-toggle {
+	.sub-level-toggle-span {
+		background-color: $color__background-color-menu-triggers;
 	}
 }
 
