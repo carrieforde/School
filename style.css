@@ -113,7 +113,7 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   border-color: #00A8E1;
-  background-color: #fff;
+  background-color: transparent;
   color: #00A8E1;
   box-shadow: none;
 }
@@ -220,9 +220,18 @@ input[type="submit"]:hover {
   color: #fff;
 }
 
+.site-footer a {
+  color: #fff;
+}
+
+.site-footer a:visited {
+  color: #fff;
+}
+
 /**
  * 5.0 Plugin Styles
  */
+/* Gravity Forms */
 .gform_wrapper.school-contact-form_wrapper {
   margin-bottom: 1.875em;
 }
@@ -236,8 +245,35 @@ input[type="submit"]:hover {
   font-size: 0.875em;
 }
 
-.gform_wrapper.school-contact-form_wrapper .left_label .gfield_label {
+.gform_wrapper.school-contact-form_wrapper .gform_body input.medium {
+  width: 60%;
+}
+
+.gform_wrapper.school-contact-form_wrapper .top_label .gfield_label {
   font-weight: 400;
+  margin: 0;
+}
+
+/* Carrie Forde Components */
+.cf-button-wrapper {
+  display: block;
+  text-align: center;
+}
+
+.school-button.center {
+  text-transform: uppercase;
+  font-family: SackersGothicStd-Light, sans-serif;
+  background-color: #fff;
+  color: #00A8E1 !important;
+  transition: all 0.2s ease-in;
+  border: 2px solid #fff;
+  padding: 10px 20px;
+}
+
+.school-button.center:hover {
+  background-color: transparent;
+  color: #fff !important;
+  border: 2px solid #fff;
 }
 
 /**

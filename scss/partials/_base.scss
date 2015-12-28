@@ -18,6 +18,7 @@ $bottom-of-the-sea: #2e2a25;
 $sea-cliff: #6b6763;
 $fog: #C6C4C2;
 $mist: #eaf1f2;
+$the-coast-is-clear: transparent;
 
 // Fonts
 $garamond: "adobe-garamond-pro", serif;
@@ -27,10 +28,13 @@ $sackers: SackersGothicStd-Light, sans-serif;
 $color__background-body: #fff;
 $color__background-footer: $great-blue-sea;
 $color__background-button: $great-blue-sea;
-$color__background-button-hover: #fff;
+$color__background-button-hover: $the-coast-is-clear;
+$color__background-button-footer: #fff;
+$color__background-button-footer-hover: $the-coast-is-clear;
 
 // Border Colors
 $color__border-button: $great-blue-sea;
+$color__border-button-footer: #fff;
 
 // Text Colors
 $color__text-main: $bottom-of-the-sea;
@@ -38,6 +42,8 @@ $color__main-navigation: $sea-cliff;
 $color__footer-text: #fff;
 $color__text-button: #fff;
 $color__text-button-hover: $great-blue-sea;
+$color__text-button-footer: $great-blue-sea;
+$color__text-button-footer-hover: #fff;
 
 // Overlay
 $color__overlay-header: rgba(255, 255, 255, 0.6);

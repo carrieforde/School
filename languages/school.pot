@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Alcatraz Child 1.0.0\n"
+"Project-Id-Version: School 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/style\n"
-"POT-Creation-Date: 2015-12-17 05:37:24+00:00\n"
+"POT-Creation-Date: 2015-12-28 05:05:40+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -13,8 +13,24 @@ msgstr ""
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "X-Generator: grunt-wp-i18n 0.5.3\n"
 
+#: header.php:26
+msgid "Skip to content"
+msgstr ""
+
+#: header.php:51
+msgid "Menu"
+msgstr ""
+
+#: template-parts/content-page.php:21
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content-page.php:31
+msgid "Edit %s"
+msgstr ""
+
 #. Theme Name of the plugin/theme
-msgid "Alcatraz Child"
+msgid "School"
 msgstr ""
 
 #. Author URI of the plugin/theme

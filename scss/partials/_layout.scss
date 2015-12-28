@@ -129,4 +129,12 @@
 	padding: $size__default-padding * 3 $size__default-padding * 2;
 	background-color: $color__background-footer;
 	color: $color__footer-text;
+
+	a {
+		color: $color__footer-text;
+
+		&:visited {
+			color: $color__footer-text;
+		}
+	}
 }

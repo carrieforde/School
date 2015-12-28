@@ -1,6 +1,8 @@
 /**
  * 5.0 Plugin Styles
  */
+
+/* Gravity Forms */
 .gform_wrapper.school-contact-form_wrapper {
 	margin-bottom: em(30);
 
@@ -8,12 +10,46 @@
 		&.left_label {
 			margin-left: 32.5%;
 		}
+
 		input.button,
 		input[type=submit] {
 			font-size: em(14);
 		}
 	}
-	.left_label .gfield_label {
-		font-weight: 400;
+
+	.gform_body {
+		input.medium {
+			width: 60%;
+		}
+	}
+
+	.top_label {
+
+		.gfield_label {
+			font-weight: 400;
+			margin: 0;
+		}
+	}
+}
+
+/* Carrie Forde Components */
+.cf-button-wrapper {
+	display: block;
+	text-align: center;
+}
+
+.school-button.center {
+	text-transform: uppercase;
+	font-family: $font__button;
+	background-color: $color__background-button-footer;
+	color: $color__text-button-footer !important;
+	transition: all 0.2s ease-in;
+	border: 2px solid $color__border-button-footer;
+	padding: 10px 20px;
+
+	&:hover {
+		background-color: $color__background-button-footer-hover;
+		color: $color__text-button-footer-hover !important;
+		border: 2px solid $color__border-button-footer;
 	}
 }

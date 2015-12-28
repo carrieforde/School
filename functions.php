@@ -41,3 +41,14 @@ function school_enqueue_scripts() {
 }
 
 require_once ALCATRAZ_FILE_PATH . 'inc/template-tags.php';
+
+add_action( 'alcatraz_footer', 'school_output_social_network_icons', 10 );
+/**
+ * Output social networks above colophon.
+ *
+ * @since 1.0.0
+ */
+function school_output_social_network_icons() {
+
+		alcatraz_the_social_network_icons();
+}
