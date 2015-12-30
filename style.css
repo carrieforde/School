@@ -332,6 +332,10 @@ article.menu {
   text-align: right;
 }
 
+.contact i {
+  vertical-align: middle;
+}
+
 @media (min-width: 48em) {
   .header-background {
     height: 60vh;
