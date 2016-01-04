@@ -52,3 +52,36 @@ function school_output_social_network_icons() {
 
 		alcatraz_the_social_network_icons();
 }
+
+add_filter( 'mm_colors', 'school_colors' );
+/**
+ * Set theme color options for Mm Components.
+ *
+ * @return  array  The array of theme colors.
+ */
+function school_colors( $context = 'mm-button' ) {
+
+	$colors = array(
+		'great-blue-sea' => __( 'Great Blue Sea', 'alcatraz-school' ),
+		'white'          => __( 'White', 'alcatraz-school' ),
+		'sea-cliff'      => __( 'Sea Cliff', 'alcatraz-school' ),
+	);
+
+	return $colors;
+}
+
+add_filter( 'mm_button_styles', 'school_button_styles' );
+/**
+ * Set theme button style options.
+ *
+ * @return  array  The array of button styles.
+ */
+function school_button_styles( $context = 'mm-button' ) {
+
+	$button_style = array(
+		'solid-to-ghost' => __( 'Solid to Ghost', 'alcatraz-school' ),
+		'ghost'          => __( 'Ghost', 'alcatraz-school' ),
+	);
+
+	return $button_style;
+}

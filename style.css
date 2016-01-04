@@ -256,27 +256,143 @@ input[type="submit"]:hover {
   margin: 0;
 }
 
-/* Carrie Forde Components */
-.cf-button-wrapper {
-  display: block;
-  text-align: center;
-}
-
-.school-button.center {
-  text-transform: uppercase;
+/* Mm Components */
+a.mm-button {
+  background-color: #00A8E1;
+  color: #fff !important;
   font-family: SackersGothicStd-Light, sans-serif;
-  background-color: #fff;
-  color: #00A8E1 !important;
-  transition: all 0.2s ease-in;
-  border: 2px solid #fff;
-  padding: 10px 20px;
-  display: inline-block;
+  text-transform: uppercase;
 }
 
-.school-button.center:hover {
+a.mm-button:hover {
+  background-color: #005c7b;
+}
+
+a.mm-button.solid-to-ghost {
+  border-color: #00A8E1 !important;
+}
+
+a.mm-button.solid-to-ghost:hover {
+  background-color: transparent;
+  color: #00A8E1 !important;
+}
+
+a.mm-button.gradient {
+  background-image: linear-gradient(#00A8E1 0%, #005c7b 100%);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+}
+
+a.mm-button.gradient:hover {
+  background: #005c7b;
+}
+
+a.mm-button.three-d {
+  box-shadow: 0 4px 0 0 #005c7b;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+}
+
+a.mm-button.three-d:hover {
+  background-color: #0082ae;
+  box-shadow: 0 3px 0 0 #005c7b;
+  -webkit-transform: translate(0, 1px);
+          transform: translate(0, 1px);
+}
+
+a.mm-button.three-d:active {
+  box-shadow: 0 0 0 0 #005c7b;
+  -webkit-transform: translate(0, 4px);
+          transform: translate(0, 4px);
+}
+
+a.mm-button.white {
+  background-color: #fff;
+  color: #fff !important;
+  color: #00A8E1 !important;
+}
+
+a.mm-button.white:hover {
+  background-color: #cccccc;
+}
+
+a.mm-button.white.solid-to-ghost {
+  border-color: #fff !important;
+}
+
+a.mm-button.white.solid-to-ghost:hover {
   background-color: transparent;
   color: #fff !important;
-  border: 2px solid #fff;
+}
+
+a.mm-button.white.gradient {
+  background-image: linear-gradient(#fff 0%, #cccccc 100%);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+}
+
+a.mm-button.white.gradient:hover {
+  background: #cccccc;
+}
+
+a.mm-button.white.three-d {
+  box-shadow: 0 4px 0 0 #cccccc;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+}
+
+a.mm-button.white.three-d:hover {
+  background-color: #e6e6e6;
+  box-shadow: 0 3px 0 0 #cccccc;
+  -webkit-transform: translate(0, 1px);
+          transform: translate(0, 1px);
+}
+
+a.mm-button.white.three-d:active {
+  box-shadow: 0 0 0 0 #cccccc;
+  -webkit-transform: translate(0, 4px);
+          transform: translate(0, 4px);
+}
+
+a.mm-button.sea-cliff {
+  background-color: #6b6763;
+  color: #fff !important;
+}
+
+a.mm-button.sea-cliff:hover {
+  background-color: #363432;
+}
+
+a.mm-button.sea-cliff.solid-to-ghost {
+  border-color: #6b6763 !important;
+}
+
+a.mm-button.sea-cliff.solid-to-ghost:hover {
+  background-color: transparent;
+  color: #6b6763 !important;
+}
+
+a.mm-button.sea-cliff.gradient {
+  background-image: linear-gradient(#6b6763 0%, #363432 100%);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+}
+
+a.mm-button.sea-cliff.gradient:hover {
+  background: #363432;
+}
+
+a.mm-button.sea-cliff.three-d {
+  box-shadow: 0 4px 0 0 #363432;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+}
+
+a.mm-button.sea-cliff.three-d:hover {
+  background-color: #514e4a;
+  box-shadow: 0 3px 0 0 #363432;
+  -webkit-transform: translate(0, 1px);
+          transform: translate(0, 1px);
+}
+
+a.mm-button.sea-cliff.three-d:active {
+  box-shadow: 0 0 0 0 #363432;
+  -webkit-transform: translate(0, 4px);
+          transform: translate(0, 4px);
 }
 
 /**

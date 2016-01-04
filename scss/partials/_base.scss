@@ -18,6 +18,7 @@ $bottom-of-the-sea: #2e2a25;
 $sea-cliff: #6b6763;
 $fog: #C6C4C2;
 $mist: #eaf1f2;
+$white: #fff;
 $the-coast-is-clear: transparent;
 
 // Fonts
@@ -83,6 +84,50 @@ $size__site-branding: 300px;
 	padding: 0;
 	position: absolute;
 	width: 1px;
+}
+
+@mixin button-color($color) {
+	background-color: $color;
+	color: #fff !important;
+	&:hover {
+		background-color: darken($color, 20%);
+	}
+}
+
+@mixin solid-to-ghost-button-color($color) {
+	border-color: $color !important;
+	&:hover {
+		background-color: transparent;
+		color: $color !important;
+	}
+}
+
+@mixin ghost-button-hover-color($color) {
+	background-color: $color !important;
+	border-color: $color;
+	color: #fff !important;
+}
+
+@mixin three-d-button-color($color) {
+	box-shadow: 0 4px 0 0 darken($color, 20%);
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+	&:hover {
+		background-color: darken($color, 10%);
+		box-shadow: 0 3px 0 0 darken($color, 20%);
+		transform: translate(0, 1px);
+	}
+	&:active {
+		box-shadow: 0 0 0 0 darken($color, 20%);
+		transform: translate(0, 4px);
+	}
+}
+
+@mixin gradient-button-color($color) {
+	background-image: linear-gradient($color 0%, darken($color, 20%) 100%);
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+	&:hover {
+		background: darken($color, 20%);
+	}
 }
 
 /**

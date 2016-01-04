@@ -32,25 +32,49 @@
 	}
 }
 
-/* Carrie Forde Components */
-.cf-button-wrapper {
-	display: block;
-	text-align: center;
-}
-
-.school-button.center {
+/* Mm Components */
+a.mm-button {
+	@include button-color($great-blue-sea);
+	font-family: $sackers;
 	text-transform: uppercase;
-	font-family: $font__button;
-	background-color: $color__background-button-footer;
-	color: $color__text-button-footer !important;
-	transition: all 0.2s ease-in;
-	border: 2px solid $color__border-button-footer;
-	padding: 10px 20px;
-	display: inline-block;
 
-	&:hover {
-		background-color: $color__background-button-footer-hover;
-		color: $color__text-button-footer-hover !important;
-		border: 2px solid $color__border-button-footer;
+	&.solid-to-ghost {
+		@include solid-to-ghost-button-color($great-blue-sea);
+	}
+
+	&.gradient {
+		@include gradient-button-color($great-blue-sea);
+	}
+	&.three-d {
+		@include three-d-button-color($great-blue-sea);
+	}
+
+	&.white {
+		@include button-color($white);
+		color: $great-blue-sea !important;
+		&.solid-to-ghost {
+			@include solid-to-ghost-button-color($white);
+		}
+
+		&.gradient {
+			@include gradient-button-color($white);
+		}
+		&.three-d {
+			@include three-d-button-color($white);
+		}
+	}
+
+	&.sea-cliff {
+		@include button-color($sea-cliff);
+		&.solid-to-ghost {
+			@include solid-to-ghost-button-color($sea-cliff);
+		}
+
+		&.gradient {
+			@include gradient-button-color($sea-cliff);
+		}
+		&.three-d {
+			@include three-d-button-color($sea-cliff);
+		}
 	}
 }
